@@ -287,7 +287,57 @@ function HomePage() {
 
   </div>
 </section>
+{/* FAQ SECTION */}
+<section className="faq-section" id="faq">
+  <div className="faq-container">
+   
+    <h2>Frequently Asked <span>Questions</span></h2>
+    
+    <div className="faq-list">
 
+      <details className="faq-item">
+        <summary>Is this beautician training course completely free?</summary>
+        <p>Yes! The basic beautician training course offered by Give Laurels Foundation of India is free.</p>
+      </details>
+
+      <details className="faq-item">
+        <summary>Who is eligible to apply?</summary>
+        <p>Applicants must be between 18 and 28 years of age and should have completed at least 10th standard.</p>
+      </details>
+
+      <details className="faq-item">
+        <summary>What is the duration of the course?</summary>
+        <p>The basic beautician training course duration is one month.</p>
+      </details>
+
+      <details className="faq-item">
+        <summary>What topics will be covered in the training?</summary>
+        <p>The course covers Basic Hair Care & Styling, Basic Skin Care and Basic Facials.</p>
+      </details>
+
+      <details className="faq-item">
+        <summary>How many seats are available?</summary>
+        <p>Only 25 seats are available for this training programme.</p>
+      </details>
+
+      <details className="faq-item">
+        <summary>Will the foundation provide beautician equipment?</summary>
+        <p>No. Students must bring their own basic beautician tools and personal practice materials. Equipment will not be provided by Give Laurels Foundation of India.</p>
+      </details>
+
+      <details className="faq-item">
+        <summary>How can I register for the course?</summary>
+        <p>You can register through our online registration form by clicking the Register Now button on this website.</p>
+      </details>
+
+      <details className="faq-item">
+        <summary>Can I contact the foundation for more information?</summary>
+        <p>Yes. Please use the Contact Us section of our website to reach Give Laurels Foundation of India.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
       {/* CONTACT US SECTION */}
       <section className="contact-section" id="contact">
 
