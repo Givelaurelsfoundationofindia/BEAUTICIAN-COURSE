@@ -20,7 +20,7 @@ function isAllowedFrontendOrigin(origin) {
   if (!origin) return true;
 
   const normalizedOrigin = origin.replace(/\/$/, "");
-  if (allowedOrigins.includes(normalizedOrigin)) return true;
+  if (allowedOrigins.includes("*") || allowedOrigins.includes(normalizedOrigin)) return true;
 
   // During local development, Vite may select 5173, 5174, 5175, etc.
   // Also allow a private LAN address when testing from another device on the same network.
