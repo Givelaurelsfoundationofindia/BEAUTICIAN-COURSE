@@ -27,12 +27,12 @@ function HomePage() {
 
       {/* NAVIGATION */}
       <header className="navbar">
-        <div className="brand">
+        <a href="#home" className="brand" aria-label="Give Laurels Foundation of India">
           <img
-            src="/give-laurels-logo.jpeg"
+            src="/give-laurels-logo.png"
             alt="Give Laurels Foundation of India"
           />
-        </div>
+        </a>
 
         <nav className="nav-links">
           <a href="#home" className="active">Home</a>

@@ -35,10 +35,23 @@ body {
   z-index: 10;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .brand img {
-  width: 300px;
-  height: 65px;
+  height: 75px;
+  width: auto;
+  max-height: 75px;
   object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.brand:hover img {
+  transform: scale(1.03);
 }
 
 .nav-links {
@@ -316,7 +329,9 @@ body {
   }
 
   .brand img {
-    width: 240px;
+    height: 65px;
+    width: auto;
+    max-height: 65px;
   }
 
   .nav-links {
@@ -363,8 +378,8 @@ body {
   }
 
   .brand img {
-    width: 210px;
-    height: auto;
+    height: 55px;
+    width: auto;
     max-height: 55px;
   }
 
