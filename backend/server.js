@@ -9,6 +9,10 @@ const session = require("express-session");
 
 const app = express();
 const PORT = Number(process.env.PORT) || 5000;
+const isProduction = process.env.NODE_ENV === "production";
+
+// Enable trust proxy for cloud hosting environments (Render, etc.) behind HTTPS reverse proxies
+app.set("trust proxy", 1);
 
 const allowedOrigins = (process.env.FRONTEND_ORIGINS || "")
   .split(",")
@@ -67,8 +71,8 @@ app.use(session({
   saveUninitialized: false,
   cookie: {
     httpOnly: true,
-    sameSite: "lax",
-    secure: process.env.NODE_ENV === "production",
+    sameSite: isProduction ? "none" : "lax",
+    secure: isProduction,
     maxAge: 30 * 60 * 1000
   }
 }));
