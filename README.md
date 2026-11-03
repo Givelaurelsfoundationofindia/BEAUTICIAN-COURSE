@@ -1,16 +1,53 @@
-# React + Vite
+# Beautician Training Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Project structure
 
-Currently, two official plugins are available:
+- `frontend/` — React + Vite website
+  - `frontend/src/admin-dashboard/` — Admin login and dashboard components
+  - `frontend/src/pages/` — Student-facing pages
+  - `frontend/src/components/` — Shared UI components
+- `backend/` — Node.js + Express API and Excel registration storage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run the backend
 
-## React Compiler
+Open a terminal in the project root:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+cd backend
+npm install
+npm start
+```
 
-## Expanding the Oxlint configuration
+The API runs at http://localhost:5000.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Run the frontend
+
+Open a second terminal in the project root:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite (normally http://localhost:5173).
+
+## Admin pages
+
+- Login: http://localhost:5173/admin/login
+- Dashboard: http://localhost:5173/admin
+
+Use the admin username and password configured in `backend/.env`.
+Do not publish or share the `.env` file.
+
+## Excel registrations
+
+The backend stores registrations in `backend/Beautician_Registrations.xlsx`.
+Keep this file closed in Excel/WPS while registrations are being added or deleted.
+
+## Important
+
+This project is configured for local development. Before public deployment, configure
+the frontend API URL, CORS allowed origins, secure admin sessions, and persistent
+server-side storage. An Excel file on a local computer will not receive public website
+registrations unless the backend and its storage are hosted on a persistent server.

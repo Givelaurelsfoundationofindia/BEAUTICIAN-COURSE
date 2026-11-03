@@ -10,8 +10,8 @@ import {
 } from "react-router-dom";
 
 import Register from "./pages/Registration.jsx";
-import AdminLogin from "./pages/AdminLogin.jsx";
-import AdminDashboard from "./pages/AdminDashboard.jsx";
+import AdminLogin from "./admin-dashboard/AdminLogin.jsx";
+import AdminDashboard from "./admin-dashboard/AdminDashboard.jsx";
 
 import "./App.css";
 const highlights = [

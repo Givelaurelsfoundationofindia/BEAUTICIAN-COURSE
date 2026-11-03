@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Admin.css";
 import SuccessPopup from "../components/SuccessPopup";
 
-const API_URL = "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 function AdminDashboard() {
   const navigate = useNavigate();
