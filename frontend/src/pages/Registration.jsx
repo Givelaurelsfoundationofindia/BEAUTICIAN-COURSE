@@ -89,8 +89,8 @@ function Register() {
         {/* FOUNDATION LOGO - LEFT */}
         <Link to="/" className="register-logo">
           <img
-            src="/give-laurels-logo.jpeg"
-            alt="Give Laurels Foundation"
+            src="/give-laurels-logo.png"
+            alt="Give Laurels Foundation of India"
           />
         </Link>
         
